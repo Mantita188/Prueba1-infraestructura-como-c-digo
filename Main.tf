@@ -160,10 +160,10 @@ resource "aws_instance" "web_server" {
               yum install -y httpd
               systemctl start httpd
               systemctl enable httpd
-              echo "<title>Servidor web de Conny desplegado con Terraform</title>" > /var/www/html/index.html
-              echo "<h1>Creado por: Constanza Catalina Retamal Muñoz</h1>" >> /var/www/html/index.html
-              echo "<h2>Asignatura: Infraestructura como codígo </h2>" >> /var/www/html/index.html
-              echo "<h3>Docente: Jorge Ramírez </h3>" >> /var/www/html/index.html
+              echo "<h1>Servidor web de Conny desplegado con Terraform</h1>" > /var/www/html/index.html
+              echo "<h2>Creado por: Constanza Catalina Retamal Muñoz</h2>" >> /var/www/html/index.html
+              echo "<h3>Asignatura: Infraestructura como codígo </h3>" >> /var/www/html/index.html
+              echo "<h4>Docente: Jorge Ramírez </h4>" >> /var/www/html/index.html
               EOF
 
   tags = {
